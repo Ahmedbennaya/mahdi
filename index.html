@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Auto - Garage Automobile Professionnel en Tunisie | Réparation & Entretien</title>
+    <meta name="description" content="Challenge Auto - Votre garage automobile de confiance en Tunisie. Services d'entretien, réparation, diagnostic et mécanique générale. Techno Cars Plus certifié. Devis gratuit.">
+    <meta name="keywords" content="garage automobile tunisie, réparation voiture tunisie, entretien auto, challenge auto, techno cars plus, vidange tunisie, freins auto, diagnostic électronique">
+    <meta name="author" content="Challenge Auto - Ste Techno Cars Plus">
+    <meta name="robots" content="index, follow">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emailjs-com/3.2.0/email.min.js"></script>
+    <!-- SEO Local et Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Challenge Auto - Ste Techno Cars Plus",
+      "description": "Garage automobile professionnel spécialisé en réparation, entretien et diagnostic de véhicules",
+      "url": "https://challengeauto.tn",
+      "telephone": "+216-22-224-915",
+      "alternateTelephone": "50-341-578",
+      "email": "challengeautotunisie@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tunis",
+        "addressCountry": "TN",
+        "addressRegion": "Tunis"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "36.741464837103",
+        "longitude": "10.255627"
+      },
+      "openingHours": [
+        "Mo-Fr 08:00-18:00",
+        "Sa 08:00-12:00"
+      ],
+      "priceRange": "DTN",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "150"
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "36.741464837103",
+          "longitude": "10.255627"
+        },
+        "geoRadius": "50000"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services Automobile",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Vidange et Entretien",
+              "description": "Service complet de vidange et entretien préventif"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "Réparation Freins",
+              "description": "Diagnostic et réparation système de freinage"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Diagnostic Électronique",
+              "description": "Diagnostic complet avec équipements professionnels"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Challenge Auto - Garage Automobile Professionnel Tunisie">
+    <meta property="og:description" content="Votre expert en réparation et entretien automobile. Services professionnels, prix compétitifs, garantie qualité.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://challengeauto.tn">
+    <meta property="og:locale" content="fr_TN">
+    <meta property="business:contact_data:street_address" content="Tunis, Tunisie">
+    <meta property="business:contact_data:country_name" content="Tunisie">
+    <meta property="business:contact_data:phone_number" content="+216-22-224-915">
+    <meta property="business:contact_data:email" content="challengeautotunisie@gmail.com">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Challenge Auto - Garage Automobile Tunisie">
+    <meta name="twitter:description" content="Services professionnels d'entretien et réparation automobile en Tunisie">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://challengeauto.tn">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+ /* --- Gallery Section --- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-unit);
+        }
+.gallery-grid {
+                grid-template-columns: 1fr; /* Stack columns */
+            }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: rgba(30, 60, 114, 0.95);
+            padding: 0.5rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 40px;
+            background: linear-gradient(135deg, #ffd700, #ffb347);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+
+        .logo-main {
+            font-size: 1.3rem;
+            background: linear-gradient(45deg, #ffd700, #ffb347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo-sub {
+            font-size: 0.7rem;
+            color: #ccc;
+            font-weight: normal;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: #e74c3c;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #e74c3c;
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(30, 60, 114, 0.9), rgba(231, 76, 60, 0.8)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f0f0" width="1200" height="600"/><circle fill="%23e74c3c" cx="200" cy="150" r="80" opacity="0.1"/><circle fill="%231e3c72" cx="800" cy="400" r="120" opacity="0.1"/><circle fill="%23e74c3c" cx="1000" cy="200" r="60" opacity="0.1"/></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #1e3c72;
+            transform: translateY(-3px);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Services Section */
+        .services {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: #1e3c72;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        /* About Section */
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            color: #1e3c72;
+            margin-bottom: 1rem;
+        }
+
+        .about-text p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 10px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .about-image {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            height: 400px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+        }
+
+        .why-choose .section-title h2 {
+            color: white;
+        }
+
+        .why-choose .section-title h2::after {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .feature-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 2rem;
+            border-radius: 15px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: #e74c3c;
+            opacity: 0.3;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .author-info h4 {
+            color: #1e3c72;
+            font-size: 1.1rem;
+        }
+
+        .stars {
+            color: #ffc107;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            height: 250px;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: white;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            padding: 3rem;
+            border-radius: 15px;
+            color: white;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: #e74c3c;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #1e3c72;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 1rem;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #e74c3c;
+            box-shadow: 0 0 10px rgba(231, 76, 60, 0.2);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer */
+        .footer {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 3rem 0 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #e74c3c;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #e74c3c;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #e74c3c;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Scroll reveal effect */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo">
+  <img src="/images/logo.jpg" alt="Challenge AUTO - Ste Techno Cars Plus" class="logo-img" />
+</div>
+
+                <div class="logo-text">
+                    <span class="logo-main">Challenge AUTO</span>
+                    <span class="logo-sub">Ste Techno Cars Plus</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#pourquoi">Avantages</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   <!-- Hero Section -->
+<section id="accueil" class="hero" style="position: relative; overflow: hidden;">
+    <!-- Responsive Image -->
+    <img src="/images/hero-img.jpg" alt="Garage automobile" style="width: 100%; height: auto; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1;" />
+
+    <div class="hero-content" style="position: relative; padding: 2rem; color: white; text-align: center;">
+        <h1>Challenge AUTO</h1>
+        <p>Votre Expert en Entretien et Réparation Automobile</p>
+        <p>Ste Techno Cars Plus - Service professionnel, qualité garantie, prix compétitifs</p>
+        <div class="cta-buttons" style="margin-top: 1rem;">
+            <a href="tel:+21622224915" class="btn-primary" style="margin-right: 1rem;">
+                <i class="fas fa-phone"></i>
+                Appeler Maintenant
+            </a>
+            <a href="#services" class="btn-secondary">
+                <i class="fas fa-wrench"></i>
+                Nos Services
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Nos Services</h2>
+                <p>Des services complets d'entretien et de réparation automobile par des professionnels qualifiés</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3>Vidange & Entretien</h3>
+                    <p>Vidange complète, changement de filtres, vérification des niveaux et entretien préventif pour optimiser les performances de votre véhicule.</p>
+                    <div class="service-price">À partir de ***</div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Réparation Freins</h3>
+                    <p>Diagnostic, réparation et remplacement de vos systèmes de freinage. Sécurité garantie avec des pièces de qualité.</p>
+                    <div class="service-price">À partir de ***</div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Diagnostic Électronique</h3>
+                    <p>Diagnostic complet de votre véhicule avec équipements professionnels. Identification rapide des pannes.</p>
+                    <div class="service-price">À partir de ****</div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3>Électricité Auto</h3>
+                    <p>Réparation et maintenance des systèmes électriques : batterie, alternateur, démarreur, éclairage.</p>
+                    <div class="service-price">À partir de ***</div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Mécanique Générale</h3>
+                    <p>Réparation moteur, embrayage, transmission et tous travaux de mécanique générale par nos experts.</p>
+                    <div class="service-price">Sur devis</div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Contrôle Technique</h3>
+                    <p>Préparation au contrôle technique, vérifications réglementaires et remise en conformité.</p>
+                    <div class="service-price">À partir de ****</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="section about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <h3>Expertise et Savoir-faire</h3>
+                    <p>Depuis plus de 15 ans, Challenge Auto - Ste Techno Cars Plus est votre partenaire de confiance pour l'entretien et la réparation de votre véhicule en Tunisie. Notre équipe de mécaniciens certifiés met son expertise au service de votre satisfaction.</p>
+                    <p>Situés au cœur de Tunis, nous utilisons des équipements de pointe et des pièces de qualité pour garantir des interventions durables et fiables. Notre engagement : vous offrir un service professionnel à des prix compétitifs.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">2500+</div>
+                            <div class="stat-label">Clients Satisfaits</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">Années d'Expérience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Taux de Satisfaction</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24h</div>
+                            <div class="stat-label">Garantie Intervention</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image reveal">
+                    <i class="fas fa-wrench"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="pourquoi" class="section why-choose">
+        <div class="container">
+                            <div class="section-title reveal">
+                <h2>Pourquoi Nous Choisir ?</h2>
+                <p>Les avantages qui font de Challenge Auto votre meilleur choix</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Mécaniciens Certifiés</h3>
+                    <p>Équipe de professionnels qualifiés et régulièrement formés aux dernières technologies automobiles</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Prix Compétitifs</h3>
+                    <p>Tarifs transparents et compétitifs avec devis gratuit et détaillé pour tous vos travaux</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Rapidité d'Intervention</h3>
+                    <p>Diagnostic rapide et interventions efficaces pour minimiser l'immobilisation de votre véhicule</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>Garantie Qualité</h3>
+                    <p>Tous nos travaux sont garantis avec utilisation de pièces de qualité d'origine ou équivalent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="temoignages" class="section testimonials">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Témoignages Clients</h2>
+                <p>La satisfaction de nos clients est notre plus belle récompense</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-text">
+                        "Service impeccable ! L'équipe est très professionnelle et les tarifs sont honnêtes. Ma voiture n'a jamais été aussi bien entretenue. Je recommande vivement Challenge Auto."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MD</div>
+                        <div class="author-info">
+                            <h4>Marie Dubois</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-text">
+                        "Excellent garage ! Diagnostic rapide et précis, travail soigné. L'équipe prend le temps d'expliquer les interventions. Un vrai service client comme on en trouve rarement."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JM</div>
+                        <div class="author-info">
+                            <h4>Jean Martin</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-text">
+                        "Garage de confiance ! Prix correct, travail de qualité et conseil avisé. Cela fait maintenant 3 ans que je confie ma voiture à Challenge Auto."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SL</div>
+                        <div class="author-info">
+                            <h4>Sophie Leroy</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+ <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2 class="section-title">Notre atelier et nos réalisations</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/gallery1.jpg" alt="Atelier PRO SERVICE AUTO 1"></div>
+                <div class="gallery-item"><img src="images/gallery2.jpg" alt="Équipement professionnel"></div>
+                <div class="gallery-item"><img src="images/gallery3.jpg" alt="Réparation avant/après"></div>
+                <div class="gallery-item"><img src="images/gallery4.jpg" alt="Technicien au travail"></div>
+                <div class="gallery-item"><img src="images/gallery5.jpg" alt="Atelier PRO SERVICE AUTO 2"></div>
+                <div class="gallery-item"><img src="images/gallery6.jpg" alt="Pièces de qualité"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Contactez-Nous</h2>
+                <p>Prenez rendez-vous ou demandez votre devis gratuit</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <h3>Informations de Contact</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Tunis, Tunisie<br><a href="https://www.google.com/maps/dir/?api=1&destination=36.741464837103%2C10.255627" target="_blank" style="color: #ffd700; text-decoration: none;">📍 Voir sur Google Maps</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphones</h4>
+                            <p><a href="tel:+21622224915" style="color: white; text-decoration: none;">📱 +216 22 224 915</a><br>
+                            <a href="tel:50341578" style="color: white; text-decoration: none;">☎️ 50 341 578</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:challengeautotunisie@gmail.com" style="color: white; text-decoration: none;">challengeautotunisie@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horaires d'Ouverture</h4>
+                            <p>Lun-Ven: 8h00 - 18h00<br>Sam: 8h00 - 12h00<br>Dim: Fermé</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/21622224915" target="_blank" style="color: #25D366; text-decoration: none; font-weight: bold;">💬 Contacter sur WhatsApp</a></p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service souhaité</label>
+                        <select id="service" name="service">
+                            <option value="">Sélectionnez un service</option>
+                            <option value="vidange">Vidange & Entretien</option>
+                            <option value="freins">Réparation Freins</option>
+                            <option value="diagnostic">Diagnostic Électronique</option>
+                            <option value="electricite">Électricité Auto</option>
+                            <option value="mecanique">Mécanique Générale</option>
+                            <option value="controle">Contrôle Technique</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Décrivez votre demande ou le problème rencontré..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Envoyer la Demande
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Challenge AUTO</h3>
+                    <p>Ste Techno Cars Plus - Votre partenaire de confiance pour l'entretien et la réparation automobile en Tunisie depuis plus de 15 ans.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/21622224915" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:challengeautotunisie@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=36.741464837103%2C10.255627" target="_blank" title="Google Maps"><i class="fas fa-map-marker-alt"></i></a>
+                        <a href="tel:+21622224915" title="Téléphone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Vidange & Entretien</a></li>
+                        <li><a href="#services">Réparation Freins</a></li>
+                        <li><a href="#services">Diagnostic Électronique</a></li>
+                        <li><a href="#services">Électricité Auto</a></li>
+                        <li><a href="#services">Mécanique Générale</a></li>
+                        <li><a href="#services">Contrôle Technique</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens Utiles</h3>
+                    <ul>
+                        <li><a href="#apropos">À Propos</a></li>
+                        <li><a href="#pourquoi">Nos Avantages</a></li>
+                        <li><a href="#temoignages">Témoignages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Devis Gratuit</a></li>
+                        <li><a href="#">Urgences</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Rapide</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +216 22 224 915</li>
+                        <li><i class="fas fa-phone-alt"></i> 50 341 578</li>
+                        <li><i class="fas fa-envelope"></i> challengeautotunisie@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Tunis, Tunisie</li>
+                        <li><i class="fas fa-clock"></i> Lun-Ven: 8h-18h, Sam: 8h-12h</li>
+                        <li><i class="fab fa-whatsapp"></i> WhatsApp: +216 22 224 915</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PRO SERVICE AUTO. Tous droits réservés. | Mentions légales | Politique de confidentialité</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Reveal animation on scroll
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveals[i].getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+
+        window.addEventListener('scroll', reveal);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+      // Initialize EmailJS
+(function() {
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+})();
+
+// Contact form handling
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    
+    // Get form data
+    const formData = new FormData(this);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const phone = formData.get('phone');
+    const service = formData.get('service');
+    const message = formData.get('message');
+    
+    // Simple validation
+    if (!name || !email || !message) {
+        alert('Veuillez remplir tous les champs obligatoires.');
+        return;
+    }
+    
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert('Veuillez entrer une adresse email valide.');
+        return;
+    }
+    
+    // Show loading state
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+    
+    // Prepare email parameters
+    const templateParams = {
+        from_name: name,
+        from_email: email,
+        phone: phone || 'Non renseigné',
+        service: service || 'Non spécifié',
+        message: message,
+        to_email: 'challengeautotunisie@gmail.com'
+    };
+    
+    // Send email via EmailJS
+    emailjs.send('service_5f0mpg8', 'template_cyng3cp', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('✅ Merci pour votre message ! Nous vous contacterons dans les plus brefs délais.');            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+            document.getElementById('contactForm').reset();
+        })
+        .catch(function(error) {
+            console.log('FAILED...', error);
+            alert('❌ Une erreur est survenue. Veuillez réessayer ou nous contacter directement.');
+        })
+        .finally(function() {
+            // Reset button state
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+        });
+});
+
+        // Add select styling
+        const style = document.createElement('style');
+        style.textContent = `
+            select {
+                padding: 1rem;
+                border: 2px solid #e9ecef;
+                border-radius: 10px;
+                font-size: 1rem;
+                background-color: white;
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+            
+            select:focus {
+                outline: none;
+                border-color: #e74c3c;
+                box-shadow: 0 0 10px rgba(231, 76, 60, 0.2);
+            }
+            
+            /* Mobile menu toggle (placeholder for future implementation) */
+            @media (max-width: 768px) {
+                .nav-menu {
+                    display: none;
+                }
+                
+                .hero h1 {
+                    font-size: 2rem;
+                }
+                
+                .hero p {
+                    font-size: 1rem;
+                }
+                
+                .services-grid,
+                .features-grid,
+                .testimonials-grid {
+                    grid-template-columns: 1fr;
+                }
+                
+                .about-content,
+                .contact-content {
+                    grid-template-columns: 1fr;
+                }
+                
+                .about-stats {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                
+                .cta-buttons {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+                
+                .btn-primary,
+                .btn-secondary {
+                    width: 100%;
+                    justify-content: center;
+                }
+                
+                .footer-content {
+                    grid-template-columns: 1fr;
+                    text-align: left;
+                }
+                
+                .social-links {
+                    justify-content: flex-start;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Initialize reveal animation
+        reveal();
+        
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // Add click effects to buttons
+        document.querySelectorAll('.btn-primary, .btn-secondary').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.style.position = 'absolute';
+                ripple.style.background = 'rgba(255,255,255,0.3)';
+                ripple.style.borderRadius = '50%';
+                ripple.style.pointerEvents = 'none';
+                ripple.style.animation = 'ripple 0.6s ease-out';
+                
+                this.style.position = 'relative';
+                this.style.overflow = 'hidden';
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Add ripple animation CSS
+        const rippleStyle = document.createElement('style');
+        rippleStyle.textContent = `
+            @keyframes ripple {
+                0% {
+                    transform: scale(0);
+                    opacity: 1;
+                }
+                100% {
+                    transform: scale(2);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(rippleStyle);
+    </script>
+</body>
+</html>
